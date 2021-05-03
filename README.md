@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Math Magicians
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project for simple math operations.
+
+## Live Demo
+
+[Live demo link](https://math-magicians-db.netlify.app/)
 
 ## Available Scripts
 
