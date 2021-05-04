@@ -1,43 +1,48 @@
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-function ButtonPanel() {
+function ButtonPanel({ handleClick }) {
   return (
     <>
       <div>
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" />
+        <Button handleClick={() => handleClick('AC')} name="AC" />
+        <Button handleClick={() => handleClick('+/-')} name="+/-" />
+        <Button handleClick={() => handleClick('%')} name="%" />
+        <Button handleClick={() => handleClick('÷')} name="÷" />
       </div>
 
       <div>
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="X" />
+        <Button handleClick={() => handleClick('7')} name="7" />
+        <Button handleClick={() => handleClick('8')} name="8" />
+        <Button handleClick={() => handleClick('9')} name="9" />
+        <Button handleClick={() => handleClick('X')} name="X" />
       </div>
 
       <div>
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" />
+        <Button handleClick={() => handleClick('4')} name="4" />
+        <Button handleClick={() => handleClick('5')} name="5" />
+        <Button handleClick={() => handleClick('6')} name="6" />
+        <Button handleClick={() => handleClick('-')} name="-" />
       </div>
 
       <div>
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" />
+        <Button handleClick={() => handleClick('1')} name="1" />
+        <Button handleClick={() => handleClick('2')} name="2" />
+        <Button handleClick={() => handleClick('3')} name="3" />
+        <Button handleClick={() => handleClick('+')} name="+" />
       </div>
 
       <div>
-        <Button name="0" />
-        <Button name="." />
-        <Button name="=" />
+        <Button handleClick={() => handleClick('0')} name="0" />
+        <Button handleClick={() => handleClick('.')} name="." />
+        <Button handleClick={() => handleClick('=')} name="=" />
       </div>
     </>
   );
 }
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
