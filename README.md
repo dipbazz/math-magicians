@@ -1,10 +1,31 @@
-# Math Magicians
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Project for simple math operations.
+# Calculator app with React
+---
+## About
 
-## Live Demo
+This is a calculator app built using React.js which performs simple math operations like; Addition, Subtraction, Multiplication, Division, Percentage, and negation.
 
-[Live demo link](https://math-magicians-db.netlify.app/)
+<!-- ![Screenshot of Calculator app]() -->
+
+### How to use the calculator app.
+
+To perform the operations:
+- User should select the first value from the number button (0 - 9)
+- User should select the operation buttons (-, +, x, ÷, %)
+- User should select the next value for calculation
+- Finally, the user can select the '=' button to perform the calculations.
+
+
+## Getting the app in the local machine.
+
+### Installation instructions
+
+- Clone the repo and navigate to the directory
+- Install the npm package with `npm install`
+- Start the server with `npm start`
+- Open your browser at http://localhost:3000/ and start to perform your calculation.
+
 
 ## Available Scripts
 
@@ -39,36 +60,47 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However, we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The features of this calculator app are:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- It performs basic mathematical operations like; Addition, Subtraction, Multiplication, Division, Percentage, and negation.
 
-### Code Splitting
+## Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is hosted on netlify.
 
-### Analyzing the Bundle Size
+[Live demo link](https://math-magicians-db.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Built With
 
-### Making a Progressive Web App
+- React.js
+- Big.js
+- prop-types
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Authors
 
-### Advanced Configuration
+👤 **Dipesh Bajgain**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- GitHub: [@dipbazz](https://github.com/dipbazz)
+- Twitter: [@dipbazz](https://twitter.com/dipbazz)
+- LinkedIn: [Dipesh Bajgain](https://www.linkedin.com/in/dipbazz/)
 
-### Deployment
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions, issues, and feature requests are welcome!
 
-### `npm run build` fails to minify
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
+
+<!-- ## Acknowledgments -->
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
+

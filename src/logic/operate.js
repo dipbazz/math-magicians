@@ -6,7 +6,7 @@ function operate(numberOne, numberTwo, operation) {
   let result;
 
   switch (operation) {
-    case 'X':
+    case 'x':
       result = x.times(y);
       break;
     case '%':
@@ -19,10 +19,14 @@ function operate(numberOne, numberTwo, operation) {
       result = x.plus(y);
       break;
     case '÷':
-      result = x.div(y);
+      if (y.toString() === '0') {
+        result = 'Error';
+      } else {
+        result = x.div(y);
+      }
       break;
     default:
-      result = 0;
+      result = '0';
   }
 
   return result.toString();
