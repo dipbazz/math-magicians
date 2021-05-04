@@ -15,7 +15,7 @@ function ButtonPanel({ handleClick }) {
         <Button handleClick={() => handleClick('7')} name="7" />
         <Button handleClick={() => handleClick('8')} name="8" />
         <Button handleClick={() => handleClick('9')} name="9" />
-        <Button handleClick={() => handleClick('X')} name="X" />
+        <Button handleClick={() => handleClick('x')} name="x" />
       </div>
 
       <div>

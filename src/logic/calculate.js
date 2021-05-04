@@ -17,12 +17,28 @@ function calculate(calculatorData, buttonName) {
       operation = null;
       break;
     case '=':
-      total = operate(total, next, operation);
-      next = '';
-      operation = null;
+      if (total && next && operation) {
+        total = operate(total, next, operation);
+        next = '';
+        operation = null;
+      }
+      break;
+    case '.':
+      if (next) {
+        next += buttonName;
+      } else {
+        total += buttonName;
+      }
+      break;
+    case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9': case '0':
+      if (!operation) {
+        total += buttonName;
+      } else {
+        next += buttonName;
+      }
       break;
     default:
-      total += buttonName;
+      operation = buttonName;
   }
 
   return { total, next, operation };
