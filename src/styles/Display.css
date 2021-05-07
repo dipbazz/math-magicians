@@ -7,4 +7,6 @@
   color: white;
   text-align: right;
   border-radius: 5px;
+  display: grid;
+  align-items: center;
 }
