@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap');
+
+* {
+  font-family: 'Farro', sans-serif;
+}
+
+.App {
+  text-align: center;
+  width: 360px;
+  margin: auto;
+  margin-top: 20px;
+  background: #f1f2f6;
+  padding: 20px 10px;
+  border-radius: 10px;
+}

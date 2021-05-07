@@ -1,0 +1,12 @@
+.display {
+  font-size: 30pt;
+  padding: 10px;
+  background-color: #2f3542;
+  height: 50px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: right;
+  border-radius: 5px;
+  display: grid;
+  align-items: center;
+}
