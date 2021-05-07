@@ -25,9 +25,9 @@ function calculate(calculatorData, buttonName) {
       break;
     case '.':
       if (next) {
-        next += buttonName;
+        next += next.includes('.') ? '' : buttonName;
       } else {
-        total += buttonName;
+        total += total.includes('.') ? '' : buttonName;
       }
       break;
     case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9': case '0':
@@ -38,7 +38,7 @@ function calculate(calculatorData, buttonName) {
       }
       break;
     default:
-      operation = buttonName;
+      operation = total ? buttonName : null;
   }
 
   return { total, next, operation };
