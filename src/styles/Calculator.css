@@ -4,7 +4,7 @@
   font-family: 'Farro', sans-serif;
 }
 
-.App {
+.Calculator {
   text-align: center;
   width: 360px;
   margin: auto;
@@ -12,4 +12,8 @@
   background: #f1f2f6;
   padding: 20px 10px;
   border-radius: 10px;
+}
+
+.flex {
+  display: flex;
 }
