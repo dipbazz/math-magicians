@@ -6,8 +6,8 @@ describe('calculate', () => {
       const result = calculate({
         total: '10',
         next: '',
-        operation: null
-      }, '+/-')
+        operation: null,
+      }, '+/-');
 
       expect(result.total).toBe('-10');
     });
@@ -16,8 +16,8 @@ describe('calculate', () => {
       const result = calculate({
         total: '10',
         next: '8',
-        operation: null
-      }, '+/-')
+        operation: null,
+      }, '+/-');
 
       expect(result.next).toBe('-8');
     });
@@ -28,8 +28,8 @@ describe('calculate', () => {
       const result = calculate({
         total: '10',
         next: '8',
-        operation: '+'
-      }, 'AC')
+        operation: '+',
+      }, 'AC');
 
       expect(result.total).toBe('');
     });
@@ -40,19 +40,19 @@ describe('calculate', () => {
       const result = calculate({
         total: '10',
         next: '8',
-        operation: '+'
-      }, '=')
+        operation: '+',
+      }, '=');
 
       expect(result.total).toBe('18');
-    })
+    });
   });
 
   it('return the total as same value without next', () => {
     const result = calculate({
       total: '10',
       next: '',
-      operation: '+'
-    }, '=')
+      operation: '+',
+    }, '=');
 
     expect(result.total).toBe('10');
   });
@@ -62,19 +62,19 @@ describe('calculate', () => {
       const result = calculate({
         total: '10',
         next: '',
-        operation: null
-      }, '.')
+        operation: null,
+      }, '.');
 
       expect(result.total).toBe('10.');
-    })
+    });
   });
 
   it('return the next as 8.', () => {
     const result = calculate({
       total: '10',
       next: '8',
-      operation: '+'
-    }, '.')
+      operation: '+',
+    }, '.');
 
     expect(result.next).toBe('8.');
   });
@@ -83,8 +83,8 @@ describe('calculate', () => {
     const result = calculate({
       total: '10.',
       next: '',
-      operation: null
-    }, '.')
+      operation: null,
+    }, '.');
 
     expect(result.total).toBe('10.');
   });
@@ -94,8 +94,8 @@ describe('calculate', () => {
       const result = calculate({
         total: '',
         next: '',
-        operation: null
-      }, '1')
+        operation: null,
+      }, '1');
 
       expect(result.total).toBe('1');
     });
@@ -104,8 +104,8 @@ describe('calculate', () => {
       const result = calculate({
         total: '12',
         next: '',
-        operation: '+'
-      }, '1')
+        operation: '+',
+      }, '1');
 
       expect(result.next).toBe('1');
     });
@@ -115,8 +115,8 @@ describe('calculate', () => {
     const result = calculate({
       total: '12',
       next: '',
-      operation: '+'
-    }, '1')
+      operation: '+',
+    }, '1');
 
     expect(result.next).toBe('1');
   });
@@ -126,19 +126,18 @@ describe('calculate', () => {
       const result = calculate({
         total: '12',
         next: '',
-        operation: null
-      }, '+')
+        operation: null,
+      }, '+');
 
       expect(result.operation).toBe('+');
     });
-
 
     it('does nothing when total is not present', () => {
       const result = calculate({
         total: '',
         next: '',
-        operation: null
-      }, '+')
+        operation: null,
+      }, '+');
 
       expect(result.operation).toBe(null);
     });
