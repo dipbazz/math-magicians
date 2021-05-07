@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import '../styles/App.css';
+import '../styles/Calculator.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
-function App() {
+function Calculator() {
   const [total, setTotal] = useState('');
   const [next, setNext] = useState('');
   const [operation, setOperation] = useState(null);
@@ -37,11 +37,16 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Display result={displayResult()} />
-      <ButtonPanel handleClick={(name) => handleClick(name)} />
+    <div className="flex">
+      <h3>
+        Let&#39;s do some math!
+      </h3>
+      <div className="Calculator">
+        <Display result={displayResult()} />
+        <ButtonPanel handleClick={(name) => handleClick(name)} />
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Calculator;
