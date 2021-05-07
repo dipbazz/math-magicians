@@ -1,0 +1,26 @@
+.button {
+  border: none;
+  outline: none;
+  font-size: 20pt;
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  display: inline-grid;
+  align-items: center;
+  margin: 5px;
+  box-shadow: 0 0 4px rgb(84 84 141 / 36%);
+  cursor: pointer;
+  background-color: #f1f2f6;
+}
+
+.button--orange{
+  background-color: #ff7f50;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button--span-2 {
+  width: calc(80px * 2);
+}

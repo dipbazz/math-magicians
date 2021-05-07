@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import '../styles/Display.css';
 
 function Display({ result }) {
   return (
-    <>
+    <div className="display">
       {result}
-    </>
+    </div>
   );
 }
 
