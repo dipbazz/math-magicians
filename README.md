@@ -6,7 +6,7 @@
 
 This is a calculator app built using React.js which performs simple math operations like; Addition, Subtraction, Multiplication, Division, Percentage, and negation.
 
-<!-- ![Screenshot of Calculator app]() -->
+![Screenshot of Calculator app](./public/calculator.gif)
 
 ### How to use the calculator app.
 
